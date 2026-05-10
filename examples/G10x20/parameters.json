@@ -1,0 +1,17 @@
+{
+    "Rabi": 1,
+    "Δt": 3.141592653589793,
+    "NSteps": 10,
+    "NCycles": 20,
+    "Detuning": 0.4,
+    "RabiFDev": 0.4,
+    "NDet": 64,
+    "NRab": 64,
+    "sigDet": 0.3,
+    "sigRab": 0.3,
+    "gradTol": 1.0e-12,
+    "maxIter": 10000,
+    "NPulses": 12,
+    "NGens": 200,
+    "NGensXUR": 0
+}
