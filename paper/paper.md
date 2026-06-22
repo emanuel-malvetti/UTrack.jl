@@ -13,6 +13,12 @@ authors:
   - name: Léo Van Damme
     orcid: 
     affiliation: "1, 2"
+  - name: Amit Devra
+    orcid: 
+    affiliation: "1, 2"\
+  - name: Steffen J. Glaser
+    orcid: 
+    affiliation: "1, 2"
 affiliations:
   - name: Technical University Munich, Germany
     index: 1
@@ -46,6 +52,6 @@ Genetic algorithms have also been applied to the search for dynamical decoupling
 
 # Acknowledgements
 
-We would like to thank Amit Devra, Abhishek Agarwal, Niklas Glaser, and Steffen Glaser for their valuable feedback on this software package.
+We would like to thank Abhishek Agarwal, and Niklas Glaser for their valuable feedback on this software package.
 
 # References

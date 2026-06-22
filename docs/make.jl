@@ -13,3 +13,9 @@ pages = [
 ]
 
 makedocs(sitename="UTrack.jl", plugins=[links], pages=pages)
+
+deploydocs(
+    repo = "github.com/emanuel-malvetti/UTrack.jl.git",
+    devbranch = "main",
+    versions = ["stable" => "v^", "v#.#", "dev" => "dev"],
+)
