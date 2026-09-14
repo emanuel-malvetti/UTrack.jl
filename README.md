@@ -36,6 +36,17 @@ If, for any reason, the optimization is interrupted, it can be restarted from th
 continue_optimization(folder)
 ```
 
+## Ready-to-use Sequences
+
+The [`Ready Sequences`](Ready%20Sequences) folder contains a set of pre-optimized U-TRACK sequences, ready to use without having to run an optimization yourself.
+Files are named `UT{block_length}x{n_blocks}.mat`, e.g. `UT4x100.mat` is a U-TRACK4 sequence (4 phases per block) with 100 blocks, i.e. 400 total $\pi$-pulses. Each file contains a single variable `phi`: a flat list of pulse phases (in radians).
+
+The [`sequence_use`](sequence_use) folder shows how to use these sequences in practice. It contains [`UTrack_Qiskit_example.ipynb`](sequence_use/UTrack_Qiskit_example.ipynb), a notebook demonstrating how to:
+
+1. Load a `.mat` sequence file from `Ready Sequences`
+2. Build Qiskit circuits that apply a prefix of the sequence (useful for benchmarking accumulated error vs. pulse count), including how to plug U-TRACK sequences into Qiskit's `PadDynamicalDecoupling` transpiler pass
+3. Convert a `.mat` sequence file to `.csv`, if you'd rather work with plain text
+
 ## Documentation
 
 The documentation of `UTrack.jl` is available at <https://emanuel-malvetti.github.io/UTrack.jl/dev/>.
